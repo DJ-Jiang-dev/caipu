@@ -1,0 +1,88 @@
+{
+  "globalStyle": {
+    "navigationStyle": "default",
+    "navigationBarTitleText": "菜谱",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#FFFFFF"
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^wd-(.*)": "wot-design-uni/components/wd-$1/wd-$1.vue",
+      "^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue"
+    }
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#818181",
+    "backgroundColor": "#F8F8F8",
+    "borderStyle": "black",
+    "height": "50px",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "list": [
+      {
+        "iconPath": "static/tabbar/dinner.png",
+        "selectedIconPath": "static/tabbar/dinner-select.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "static/tabbar/marks.png",
+        "selectedIconPath": "static/tabbar/marks-select.png",
+        "pagePath": "pages/marks/marks",
+        "text": "商城"
+      },
+      {
+        "iconPath": "static/tabbar/scan.png",
+        "selectedIconPath": "static/tabbar/scan-select.png",
+        "pagePath": "pages/scan/scan",
+        "text": "扫码"
+      },
+      {
+        "iconPath": "static/tabbar/cart.png",
+        "selectedIconPath": "static/tabbar/cart-select.png",
+        "pagePath": "pages/cart/cart",
+        "text": "购物车"
+      },
+      {
+        "iconPath": "static/tabbar/setting.png",
+        "selectedIconPath": "static/tabbar/setting-select.png",
+        "pagePath": "pages/settings/settings",
+        "text": "我的"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "type": "home"
+    },
+    {
+      "path": "pages/about/about",
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "关于"
+      }
+    },
+    {
+      "path": "pages/cart/cart",
+      "type": "page"
+    },
+    {
+      "path": "pages/marks/marks",
+      "type": "page"
+    },
+    {
+      "path": "pages/scan/scan",
+      "type": "page"
+    },
+    {
+      "path": "pages/settings/settings",
+      "type": "page"
+    }
+  ],
+  "subPackages": []
+}
